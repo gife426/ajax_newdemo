@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebStorag</title>
+    <script src="webstorage.js"></script>
+</head>
+<body>
+    <span>姓名：</span>
+    <input id="name" type="text">
+    <button id="btn1" value="提交" type="button" onclick="saveLocalStorage('name')">提交</button>
+    <button id="btn2" value="读取" type="button" onclick="getLocalStorage('user')">读取</button>
+    <p id="user"></p>
+    <br/>
+    <br/>
+    <textarea id="demo" cols="60" rows="10"></textarea><br/>
+    <input type="button" value="追加数据" onclick="saveStorage('demo')">
+    <input type="button" value="删除数据" onclick="clearStorage()">
+    <p id="msg"></p>
+
+    <br/>
+    <table>
+        <tr>
+            <td>姓名：</td>
+            <td><input type="text" id="username"></td>
+        </tr>
+        <tr>
+            <td>邮箱：</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>电话：</td>
+            <td><input type="tel" id="tel"></td>
+        </tr>
+        <tr>
+            <td>备注</td>
+            <td><input type="text" id="memo"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="保存" onclick="saveData()"></td>
+        </tr>
+    </table>
+    <br/>
+    <hr>
+     <p>
+         检索：
+         <input type="text" id="find">
+         <input type="button"  value="检索" onclick="findData()">
+     </p>
+     <p id="msg1"></p>
+
+
+</body>
+</html>
